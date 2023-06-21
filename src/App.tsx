@@ -38,10 +38,7 @@ function App() {
           <GenreList
             selectedGenreId={gameQuery.genreId}
             onSelectGenre={(genre) =>
-              setGameQuery({
-                ...gameQuery,
-                genreId: genre.id
-              })
+              setGameQuery({ ...gameQuery, genreId: genre.id })
             }
           />
         </GridItem>
@@ -52,7 +49,7 @@ function App() {
           <Flex marginBottom={5}>
             <Box marginRight={5}>
               <PlatformSelector
-                selectedPlatform={gameQuery.platformId}
+                selectedPlatformId={gameQuery.platformId}
                 onSelectPlatform={(platform) =>
                   setGameQuery({
                     ...gameQuery,
